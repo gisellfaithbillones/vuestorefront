@@ -1,9 +1,24 @@
 <template>
-  <SfProductCard :image="item.thumbnail" :imageWidth="216" :imageHeight="326" badgeLabel="" badgeColor=""
-                 :title="item.title" :link="this.url" :linkTag="item.id" :scoreRating="4" :reviewsCount="7" :maxRating="5"
-                 :regularPrice="this.highestPrice.amount" :specialPrice="this.lowestPrice.amount" wishlistIcon="heart"
-                 isInWishlistIcon="heart_fill" :isInWishlist="false" showAddToCartButton :isAddedToCart="false"
-                 :addToCartDisabled="false" />
+  <SfProductCard
+    :image="item.thumbnail"
+    :imageWidth="216"
+    :imageHeight="326"
+    badgeLabel="" badgeColor=""
+    :title="item.title"
+    :link="this.url"
+    :linkTag="item.id"
+    :scoreRating="4"
+    :reviewsCount="7"
+    :maxRating="5"
+    :regularPrice="this.highestPrice.amount"
+    :specialPrice="this.lowestPrice.amount"
+    wishlistIcon="heart"
+    isInWishlistIcon="heart_fill"
+    :isInWishlist="false"
+    showAddToCartButton
+    :isAddedToCart="false"
+    :addToCartDisabled="false"
+  />
 </template>
 <script>
   import { SfProductCard } from "@storefront-ui/vue"; // Import the components
