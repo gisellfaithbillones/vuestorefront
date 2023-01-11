@@ -61,7 +61,7 @@
     },
     async fetch(){ // Fetching the products from Medusa server
       try{
-        const {data:{products}} = await Axios.get(`${process.env.baseUrl}/store/products`);
+        const {data:{products}} = await Axios.get(`${process.env.NUXT_ENV_BASE_URL}/store/products`);
         this.products = products
       }catch(e){
         console.log('An error occured', e)

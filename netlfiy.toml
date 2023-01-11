@@ -1,2 +1,2 @@
 [template.environment]
-NUXT_ENV_baseUrl="URL of your Medusa Server"
+NUXT_ENV_BASE_URL="URL of your Medusa Server"
